@@ -4,5 +4,5 @@ from django.views.generic import TemplateView, ListView, DetailView
 # Create your views here.
 
 class Home(TemplateView):
-    template_name = 'home.html'
+    template_name = 'shop/home.html'
 
