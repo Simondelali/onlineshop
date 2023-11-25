@@ -1,7 +1,19 @@
 .ml{
     margin-left: 10px;
+    font-family: cursive;
 }
 .headings{
     text-align: center;
+    margin-top: 15px;
 }
 
+.carousel-img{
+    max-height: 550px;
+    width: 100%;
+}
+.carousel-text{
+    color: black;
+}
+.test{
+    background:blue;
+}
