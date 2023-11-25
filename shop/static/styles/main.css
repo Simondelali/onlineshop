@@ -17,3 +17,7 @@
 .test{
     background:blue;
 }
+.price{
+    display: flex;
+    justify-content: space-between;
+}
