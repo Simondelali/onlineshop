@@ -65,20 +65,22 @@
 
     <div class="row">
       <!-- Product -->
+      {% for item in items %}
       <div class="col-lg-4 col-md-6">
         <div class="card product-card">
-          <img src="{% static 'assets/images/c2.jpg' %}" class="card-img-top" alt="Product 1">
+          <img src="{% static 'assets/images/bag.jpg' %}" class="card-img-top" alt="Product 1" style="height: 280px;">
           <div class="card-body">
-            <h5 class="card-title">Men's T-shirt</h5>
-            <p class="card-text">Description of Product 1</p>
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.description }}</p>
             <div class="price">
-              <p class="card-text">$19.99 </p>
-              <p class="card-text">8 units left</p>
+              <p class="card-text">GHc {{ item.price }} </p>
+              <p class="card-text">{{ item.quantity }} units left</p>
             </div>
             <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#quantityModal">Add to Cart</a>
           </div>
         </div>
       </div>
+      {% endfor %}
       <!--  -->
 
       <!-- Quantity Modal -->
