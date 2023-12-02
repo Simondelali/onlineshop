@@ -14,5 +14,5 @@ class Item(models.Model):
 
 class OrderItem(models.Model):
     ...
-class Order(models.Models):
+class Order(models.Model):
     ...
