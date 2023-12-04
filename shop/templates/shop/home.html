@@ -70,7 +70,7 @@
         <div class="card product-card">  
           <img src="{% static 'assets/images/bag.jpg' %}" class="card-img-top" alt="Product 1" style="height: 250px; width: 100%;">
           <div class="card-body">
-            <a href="{% url 'product-detail' item.id %}" ><h5 class="card-title">{{ item.name }}</h5></a>
+            <a href="{% url 'product-detail' item.slug %}" ><h5 class="card-title">{{ item.name }}</h5></a>
             <p class="card-text">{{ item.description }}</p>
             <div class="price">
               <p class="card-text">GHc {{ item.price }} </p>
